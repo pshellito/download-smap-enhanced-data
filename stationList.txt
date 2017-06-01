@@ -1,0 +1,2 @@
+% site	lat	lon
+carm	49.43	-98.03
