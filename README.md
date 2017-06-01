@@ -18,7 +18,9 @@ This file specifies which data fields to save in the SMAP database. Uncomment th
 This script will read a list of requested point locations and use the function, 'extractSmapTimeSeries.m,' to pull out the valid SMAP obesrvations at those locations. It will save each location as a .mat file in the directory, stationTimeSeries.
 ### extractSmapTimeSeries.m
 This function will pull out the SMAP data at one location and only save data that have not been flagged for any of the following: standing water, precip, snow, ice, frozen ground, mountain, or dense vegetation.
+
 The field "idcsNotRec" is a list of the SMAP soil moisture retrievals that were successful but were flagged for one of the above reasons. They are NOT recommended for use.
+
 The field "flaggedBits" tells the user which flag(s) were triggered. A description of which bit refers to which flag can be found [here](https://nsidc.org/data/smap/spl3smp_e/data-fields#surf)
 ### stationList.txt
 This text file contains the station name, lat, and lon to be used by 'callExtractSmapTimeSeries.m'
