@@ -1,4 +1,5 @@
 smapL3Edatabase.mat
 generate9kmLonLatOfEaseGrid.m
 outFiles/
+stationTimeSeries/
 .DS_Store
